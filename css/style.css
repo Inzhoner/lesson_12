@@ -3,7 +3,6 @@
 body {
     overflow: hidden;
     height: 100vh;
-    /* background-color: #1e2862;  */
 }
 
 @keyframes driving {
@@ -58,8 +57,8 @@ body {
         transform: rotate(360deg);
     }
 }
-/*-   Car   */
 
+/*-   Car   */
 .car-container {
     position: absolute;
     bottom: -10%;
@@ -303,7 +302,7 @@ body {
     transform-origin: 50% 500px;
 }
 
-/*Headlights*/
+/*- Headlights*/
 .car-top1:after {
     width: 13px;
     height: 37px;
@@ -330,9 +329,6 @@ body {
     border-bottom: 80px solid transparent;
     border-right: 500px solid rgba(191, 188, 87, 0.7);
     z-index: -1;
-    -webkit-mask-box-image: -webkit-linear-gradient(left, black, transparent);
-    -webkit-mask-box-image: -o-linear-gradient(left, black, transparent);
-    -webkit-mask-box-image: linear-gradient(to right, black, transparent);
     transform: rotate(-9deg);
 }
 
@@ -344,35 +340,39 @@ body {
     height: 100%;
     margin-bottom: -350px;
     background: #042548;
-  }
-  .stars_1, .stars_2, .stars_3{
+}
+.stars_1,
+.stars_2,
+.stars_3 {
     position: absolute;
     top: 0;
-    left: 0;  
+    left: 0;
     width: 100%;
-    height: 100%; 
-    opacity: 0;  
-    background: url('../img/stars_2.png');  
+    height: 100%;
+    opacity: 0;
+    background: url('../img/stars_2.png');
     -webkit-animation: stars 5s linear infinite;
     animation: stars 5s linear infinite;
-  }
-  .stars_2 {
+}
+.stars_2 {
     background-position: 100px 100px;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
-  }
-  .stars_3 {
+}
+.stars_3 {
     background-image: url('../img/stars_2.png');
     background-position: 350px 100px;
     animation-delay: 3s;
-  }
+}
 
-  @-webkit-keyframes stars {
-    0%, 50%, 100% {opacity: 0;}
-    1%, 49% {opacity: 1;}
-  }
-  @keyframes stars {
-    0%, 50%, 100% {opacity: 0;}
-    5%, 45% {opacity: 1;}
-  }
-       
+@keyframes stars {
+    0%,
+    50%,
+    100% {
+        opacity: 0;
+    }
+    5%,
+    45% {
+        opacity: 1;
+    }
+}
